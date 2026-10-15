@@ -10,7 +10,7 @@ The **Board** tab opens a freeform 12-row breadboard. Place resistors, independe
 
 In the separate **Logic** mode, place input drivers and any of seven gates, wire them together, and probe **0/1/X/Z** signals live. Undriven nets read Z; opposing drivers resolve to X. Logical fanout is supported. Logic states use the same ideal gate models as the lessons; the board does not convert analog voltage into logic through unstated thresholds.
 
-Analog analysis supports DC and fixed-step transient Run, Step and Reset. Reset loads explicit capacitor-voltage and inductor-current initial conditions; **t=0 has no solved measurement**, so probes remain unavailable until the first step. Editing parts, wiring, initial conditions or Δt resets the simulation. Undo restores a prior board edit, and Analog and Logic documents autosave separately on the device. Move or delete parts and jumpers through Edit or the parts list. The sandbox supports up to 32 components and 64 jumpers. See [the breadboard model and interaction contract](Docs/Breadboard.md) and [the breadboard preview](Design/breadboard-preview.jpg).
+Analog analysis supports DC and fixed-step transient Run, Step and Reset. Reset loads explicit capacitor-voltage and inductor-current initial conditions; **t=0 has no solved measurement**, so probes remain unavailable until the first step. Editing parts, wiring, initial conditions or Δt resets the simulation. Undo restores a prior board edit, and Analog and Logic documents autosave separately on the device. Move or delete parts and jumpers through Edit or the parts list. The sandbox supports up to 32 components and 64 jumpers. See [the breadboard model and interaction contract](Docs/Breadboard.md) and [the editable preset definitions](Sources/CircuitCore/Breadboard.swift). Preview screenshots are not included in this public snapshot; [PUBLICATION.md](PUBLICATION.md) describes its exclusions.
 
 The **Bench** tab opens a four-node DC editor. Load divider, series, parallel or bridge examples; add, edit and remove resistors or independent sources; change their terminals; probe node voltages; and inspect branch currents, KCL residuals and power balance. Edits support undo and persist locally. The editor supports up to 20 parts, with node 0 as ground.
 
@@ -48,11 +48,11 @@ Floating, singular, contradictory and invalid circuit configurations produce typ
 
 Board contacts and probes are ideal: there is no probe loading, contact resistance or parasitic wire model. Current is measured through a component branch; arbitrary ideal-jumper current is unavailable after its endpoints merge into a net. Analog and Logic remain separate analysis modes.
 
-See [the curriculum and fidelity contract](Docs/Curriculum.md) and [the breadboard contract](Docs/Breadboard.md) for detailed coverage and references. The complete pure Swift suite passes **187 tests with zero failures**, covering analytical references, terminal KCL and power, nonlinear load lines, operating regions, transient convergence and saved-board compatibility. Both new nonlinear native workflows passed on the iPhone 15 Pro Max, including typed model edits, relaunch persistence, transistor switching, amplifier overload and five-pin placement. Release **0.4.0 (5)** is installed and its launch is verified. See [the validation record](Docs/Validation.md) for evidence and remaining boundaries, and the phone captures of [LED current](Design/nonlinear-led-current.png) and [op-amp supply current](Design/opamp-supply-current.png).
+See [the curriculum and fidelity contract](Docs/Curriculum.md) and [the breadboard contract](Docs/Breadboard.md) for detailed coverage and references. The original README reported **187 pure Swift tests passing with zero failures**, two nonlinear native workflows passing on an iPhone 15 Pro Max, and installation/launch of **0.4.0 (5)**. Those are historical reports: the public snapshot contains test source, but no corresponding run logs, result bundles or phone captures. The documentation audit counted 187 declared SwiftPM tests; it did not execute them or verify the app's build, installation or launch. See [the public validation guide](Docs/Validation.md) for evidence status, environment requirements and reproducible experiments. Public source checks for [LED current and op-amp supply/current limits](Tests/CircuitCoreTests/NonlinearBreadboardTests.swift) replace the unavailable phone captures.
 
 ## Build and run
 
-Use **Xcode 27** with the iOS 27 SDK and XcodeGen. From this directory:
+The native project declares **iOS 27** and Swift 6; use a macOS host with **Xcode 27**, its iOS 27 SDK and simulator runtime, and XcodeGen. These are the repository's declared requirements, not a newly verified build environment. The standalone model-test package declares Swift tools **6.0** and **macOS 15+** and does not require XcodeGen or an iOS simulator. See [validation and environment details](Docs/Validation.md#environment-and-test-commands). From this directory:
 
 ```sh
 xcodegen generate
@@ -70,7 +70,14 @@ xcodebuild -project CircuitToy.xcodeproj -scheme CircuitToy \
   CODE_SIGNING_ALLOWED=NO build
 ```
 
-Run the pure Swift model tests with caches and build products in `/private/tmp`. `--disable-sandbox` disables SwiftPM's nested sandbox; the calling environment's filesystem permissions still apply.
+On a supported macOS host, run the pure Swift model tests from the repository root:
+
+```sh
+swift --version
+swift test
+```
+
+For a host that needs the original custom cache locations, the following alternative puts caches and build products in `/private/tmp`. Use `--disable-sandbox` only if needed for that host's nested-sandbox restrictions; it is not required by the scientific models and the calling environment's filesystem permissions still apply.
 
 ```sh
 CLANG_MODULE_CACHE_PATH=/private/tmp/CircuitToyCoreBuild/ClangModuleCache \
@@ -82,15 +89,15 @@ swift test --disable-sandbox \
   --security-path /private/tmp/CircuitToySwiftSecurity
 ```
 
-`Package.swift` tests `Sources/CircuitCore`, breadboard connectivity and analysis, the pure science/advanced models, and curriculum routing metadata. The native UI test target includes workflows for all 33 additional lesson destinations, Learn navigation, capstone controls and breadboard placement, wiring, probes, edits, logic signals, transient stepping and persistence. These tests run through the generated Xcode scheme. The app's SwiftUI views compile through the Xcode project.
+[Package.swift](Package.swift) defines four model/store test targets covering `Sources/CircuitCore`, breadboard connectivity and analysis, the pure science/advanced models, and curriculum routing metadata. `swift test` does not run the separate native UI tests or build the SwiftUI app. The native UI test target includes workflows for all 33 additional lesson destinations, Learn navigation, capstone controls and breadboard placement, wiring, probes, edits, logic signals, transient stepping and persistence. Run those through the generated Xcode scheme using [the UI test command](Docs/Validation.md#native-build-and-ui-tests); a successful model run alone does not establish those workflows.
 
 ## Project layout
 
 - `App/`: native app, bench/breadboard state, 43 lesson experiment destinations, 54-lesson curriculum and visual components.
 - `Sources/CircuitCore/`: SI circuit models, DC/transient solver, breadboard netlist compiler, presets and digital logic.
 - `Tests/`: conservation, analytical references, digital/coding properties, numerical convergence, curriculum and native UI checks.
-- `Docs/`: curriculum/model contract and validation evidence.
-- `Design/`: visual direction and simulator previews: [breadboard](Design/breadboard-preview.jpg), [DC bench](Design/bench-preview.jpg), [learning map](Design/learn-preview.jpg), [capstone](Design/capstone-preview.jpg), [adder](Design/adder-preview.jpg), [RC transient](Design/transient-preview.jpg), [AC filter](Design/ac-preview.jpg).
+- `Docs/`: [curriculum/model contract](Docs/Curriculum.md), experiment specifications and [public validation guide](Docs/Validation.md).
+- `Design/`: [visual direction](Design/Direction.md) and [icon-generation source](Design/MakeIcon.swift). Simulator previews are not published. For public demonstrations, start with [reproducible circuit experiments](Docs/Validation.md#reproducible-model-experiments), [curriculum routing checks](Tests/AdvancedModelsTests/CurriculumTests.swift), [capstone specifications](Docs/PracticeExperiments.md), [logic tests](Tests/CircuitCoreTests/LogicTests.swift) and [RC/AC model specifications](Docs/Curriculum.md).
 
 
 ## Public snapshot
