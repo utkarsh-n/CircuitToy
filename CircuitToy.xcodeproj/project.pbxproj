@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2E5F0BF0332A476AE1119D /* PracticeLabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC396AB3D3F89D809BD35A6 /* PracticeLabs.swift */; };
+		22A488E18DFE92AB82686124 /* LessonCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1E3E09A1CF62F04D1E94A /* LessonCatalog.swift */; };
+		2657393323AAF212E99B0E67 /* NativeLessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54712F6B296FC41F6A42295 /* NativeLessonTests.swift */; };
+		2F1128F16DDA196D1F15170F /* CurriculumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F088AA2E0D8D51F00EBB2B1 /* CurriculumData.swift */; };
+		310DB0AA463AE858D4E90BE9 /* CircuitPresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611027803F26609B810D59B4 /* CircuitPresets.swift */; };
+		3620BBA6B1FDC422B8D32910 /* EngineeringModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EBA0554D4458513F3500DA /* EngineeringModels.swift */; };
+		36C9AAFF1584B5EB2788E038 /* AdvancedLessonLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6665CB46095B7AAF427B2678 /* AdvancedLessonLab.swift */; };
+		3BA1D221D3D390E0B644FFE0 /* EngineeringLabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED8DF13913172C3E749DC4 /* EngineeringLabs.swift */; };
+		548BFDA0C729B57EC8E97925 /* ReactiveLabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3261018AE06A03541A51FE /* ReactiveLabs.swift */; };
+		553BA58E50DFBFFCE8B0244A /* BenchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F6F6BECEB137AC59BD3D /* BenchStore.swift */; };
+		619BEF6554A22FDCB4E263A9 /* CircuitSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662661E94434DEC688860B65 /* CircuitSolver.swift */; };
+		6BA30F7A75B35071386C62A9 /* LessonSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4AEB2CBD38AA326B6902BB /* LessonSupport.swift */; };
+		73D6DE7DBB41E2468F270B63 /* BreadboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F2A7846479C1DB7E384FE /* BreadboardUITests.swift */; };
+		82424A58FA8ECC3F52AA6A2C /* SystemsLabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2A76F3064A2C0A9108321 /* SystemsLabs.swift */; };
+		879BAF2E3B1FE0ABB2D292B5 /* CurriculumViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D3327EA03CE9609C866A95 /* CurriculumViews.swift */; };
+		8A10450061F201F8B4A0361C /* SystemsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18A3F21D8572E42909832C /* SystemsModels.swift */; };
+		8C4A7A5DB74579AB4A136C27 /* CircuitCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDC263D2A86A8DD1A8EF973 /* CircuitCore.framework */; };
+		8E04F2C94BD8E583B0026CE7 /* BreadboardSandboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B887B35BCDA01F676C562742 /* BreadboardSandboxView.swift */; };
+		906323951DF84627F85E73F5 /* NonlinearModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13D34E8DCE124ECBF2B7E5 /* NonlinearModels.swift */; };
+		9611F2B8BB7495BE39568EBF /* ScienceLabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2249D7CCC627D3A3C17CCCD0 /* ScienceLabs.swift */; };
+		9ADFA5044105FF99547D6D9B /* LogicLabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEABBBA8BBD95FADEC4F63F /* LogicLabView.swift */; };
+		9B4C8A12EB96AB2FDF2C0363 /* PracticeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD22BF209960B18D889E37 /* PracticeModels.swift */; };
+		9F662904271D3D6F165D0082 /* Breadboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1F8FA911AFFE226E41B42 /* Breadboard.swift */; };
+		A8FF4FC537791B6596AC7A4E /* FoundationsLabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43885640838528AFDFC569FA /* FoundationsLabs.swift */; };
+		AAF878F2A1639C3CE413DDE5 /* FoundationsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639986F909219C9A3F21A575 /* FoundationsModels.swift */; };
+		ADC536435324C53ECB76FB72 /* CircuitCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCDC263D2A86A8DD1A8EF973 /* CircuitCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B1F94147F0738EC9AB173CFC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5ADB26FA54C1F3C5407BF5 /* Theme.swift */; };
+		BD6095C3B975605695A3B59C /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8261EDAED608351720C35E4 /* Logic.swift */; };
+		C4CD930AAB491FBC2F3EB154 /* CircuitToyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F39B7FDC65F55FBE3879A0 /* CircuitToyApp.swift */; };
+		C5E14E20E2CEDF1671B71F5A /* Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF960315523F1462ECD866 /* Circuit.swift */; };
+		D91748607225FEFA8173E742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF138113F4953731C24E8BB0 /* Assets.xcassets */; };
+		E1B5701E51EDAF84970047F6 /* BreadboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ABB765420526886EA9A2CC /* BreadboardStore.swift */; };
+		E4E88CE4D48E033506C003F1 /* BreadboardBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9D83826A9023B295C525A /* BreadboardBoardView.swift */; };
+		E9C2EE362671590EA1A89C04 /* CircuitBenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7923F5222FC7908AD8B67CB /* CircuitBenchView.swift */; };
+		F61AEA8311A2E87210C83B29 /* ScientificModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DAA4356219731EB2017E91 /* ScientificModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		671FEC585282CDC3424C3B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 823D1593C7651BFEA424E151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29E4E848473BF13C12C522F6;
+			remoteInfo = CircuitCore;
+		};
+		B31AA63F66B31104383FA6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 823D1593C7651BFEA424E151 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C438667FC7D198593B86446;
+			remoteInfo = CircuitToy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7C69188B43C5CB46A15584E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ADC536435324C53ECB76FB72 /* CircuitCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03EBA0554D4458513F3500DA /* EngineeringModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringModels.swift; sourceTree = "<group>"; };
+		2249D7CCC627D3A3C17CCCD0 /* ScienceLabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScienceLabs.swift; sourceTree = "<group>"; };
+		33ABB765420526886EA9A2CC /* BreadboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadboardStore.swift; sourceTree = "<group>"; };
+		37C2A76F3064A2C0A9108321 /* SystemsLabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsLabs.swift; sourceTree = "<group>"; };
+		3EC396AB3D3F89D809BD35A6 /* PracticeLabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeLabs.swift; sourceTree = "<group>"; };
+		43885640838528AFDFC569FA /* FoundationsLabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationsLabs.swift; sourceTree = "<group>"; };
+		4DFF225EE75D41FAC6ECBDED /* CircuitToyUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CircuitToyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E1F2A7846479C1DB7E384FE /* BreadboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadboardUITests.swift; sourceTree = "<group>"; };
+		611027803F26609B810D59B4 /* CircuitPresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitPresets.swift; sourceTree = "<group>"; };
+		639986F909219C9A3F21A575 /* FoundationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationsModels.swift; sourceTree = "<group>"; };
+		64D3327EA03CE9609C866A95 /* CurriculumViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumViews.swift; sourceTree = "<group>"; };
+		662661E94434DEC688860B65 /* CircuitSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitSolver.swift; sourceTree = "<group>"; };
+		6665CB46095B7AAF427B2678 /* AdvancedLessonLab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedLessonLab.swift; sourceTree = "<group>"; };
+		7C4AEB2CBD38AA326B6902BB /* LessonSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonSupport.swift; sourceTree = "<group>"; };
+		7F088AA2E0D8D51F00EBB2B1 /* CurriculumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumData.swift; sourceTree = "<group>"; };
+		81DAA4356219731EB2017E91 /* ScientificModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScientificModels.swift; sourceTree = "<group>"; };
+		81F39B7FDC65F55FBE3879A0 /* CircuitToyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitToyApp.swift; sourceTree = "<group>"; };
+		84D9D83826A9023B295C525A /* BreadboardBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadboardBoardView.swift; sourceTree = "<group>"; };
+		8A13D34E8DCE124ECBF2B7E5 /* NonlinearModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonlinearModels.swift; sourceTree = "<group>"; };
+		96BD22BF209960B18D889E37 /* PracticeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeModels.swift; sourceTree = "<group>"; };
+		9DED8DF13913172C3E749DC4 /* EngineeringLabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringLabs.swift; sourceTree = "<group>"; };
+		A54712F6B296FC41F6A42295 /* NativeLessonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeLessonTests.swift; sourceTree = "<group>"; };
+		A8261EDAED608351720C35E4 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		AFEABBBA8BBD95FADEC4F63F /* LogicLabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicLabView.swift; sourceTree = "<group>"; };
+		B887B35BCDA01F676C562742 /* BreadboardSandboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadboardSandboxView.swift; sourceTree = "<group>"; };
+		BCEF960315523F1462ECD866 /* Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circuit.swift; sourceTree = "<group>"; };
+		C7923F5222FC7908AD8B67CB /* CircuitBenchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircuitBenchView.swift; sourceTree = "<group>"; };
+		CA5ADB26FA54C1F3C5407BF5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		CBC21D66F9BF16C989B3FB89 /* CircuitToy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CircuitToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF1E3E09A1CF62F04D1E94A /* LessonCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonCatalog.swift; sourceTree = "<group>"; };
+		DC18A3F21D8572E42909832C /* SystemsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemsModels.swift; sourceTree = "<group>"; };
+		DEC1F8FA911AFFE226E41B42 /* Breadboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breadboard.swift; sourceTree = "<group>"; };
+		E0FDBBE5109EF1813DF9E002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EE3261018AE06A03541A51FE /* ReactiveLabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveLabs.swift; sourceTree = "<group>"; };
+		F747F6F6BECEB137AC59BD3D /* BenchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchStore.swift; sourceTree = "<group>"; };
+		FCDC263D2A86A8DD1A8EF973 /* CircuitCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircuitCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF138113F4953731C24E8BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EB4274037376FB426EE19F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4A7A5DB74579AB4A136C27 /* CircuitCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FF99C5BFD31A4461BC8DCF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65F979EAF0187D871BDD5A15 /* CircuitCore */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1D72903A4296827BCE3D0D81 = {
+			isa = PBXGroup;
+			children = (
+				4133F45BD7CFA675C280DA58 /* App */,
+				08FF99C5BFD31A4461BC8DCF /* Sources */,
+				9322A3F3A23A398CB070B10E /* Tests */,
+				FE12749937F3F005D06E4DA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4133F45BD7CFA675C280DA58 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6665CB46095B7AAF427B2678 /* AdvancedLessonLab.swift */,
+				FF138113F4953731C24E8BB0 /* Assets.xcassets */,
+				F747F6F6BECEB137AC59BD3D /* BenchStore.swift */,
+				84D9D83826A9023B295C525A /* BreadboardBoardView.swift */,
+				B887B35BCDA01F676C562742 /* BreadboardSandboxView.swift */,
+				33ABB765420526886EA9A2CC /* BreadboardStore.swift */,
+				C7923F5222FC7908AD8B67CB /* CircuitBenchView.swift */,
+				81F39B7FDC65F55FBE3879A0 /* CircuitToyApp.swift */,
+				7F088AA2E0D8D51F00EBB2B1 /* CurriculumData.swift */,
+				64D3327EA03CE9609C866A95 /* CurriculumViews.swift */,
+				9DED8DF13913172C3E749DC4 /* EngineeringLabs.swift */,
+				03EBA0554D4458513F3500DA /* EngineeringModels.swift */,
+				43885640838528AFDFC569FA /* FoundationsLabs.swift */,
+				639986F909219C9A3F21A575 /* FoundationsModels.swift */,
+				E0FDBBE5109EF1813DF9E002 /* Info.plist */,
+				CFF1E3E09A1CF62F04D1E94A /* LessonCatalog.swift */,
+				7C4AEB2CBD38AA326B6902BB /* LessonSupport.swift */,
+				AFEABBBA8BBD95FADEC4F63F /* LogicLabView.swift */,
+				3EC396AB3D3F89D809BD35A6 /* PracticeLabs.swift */,
+				96BD22BF209960B18D889E37 /* PracticeModels.swift */,
+				EE3261018AE06A03541A51FE /* ReactiveLabs.swift */,
+				2249D7CCC627D3A3C17CCCD0 /* ScienceLabs.swift */,
+				81DAA4356219731EB2017E91 /* ScientificModels.swift */,
+				37C2A76F3064A2C0A9108321 /* SystemsLabs.swift */,
+				DC18A3F21D8572E42909832C /* SystemsModels.swift */,
+				CA5ADB26FA54C1F3C5407BF5 /* Theme.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		65F979EAF0187D871BDD5A15 /* CircuitCore */ = {
+			isa = PBXGroup;
+			children = (
+				DEC1F8FA911AFFE226E41B42 /* Breadboard.swift */,
+				BCEF960315523F1462ECD866 /* Circuit.swift */,
+				611027803F26609B810D59B4 /* CircuitPresets.swift */,
+				662661E94434DEC688860B65 /* CircuitSolver.swift */,
+				A8261EDAED608351720C35E4 /* Logic.swift */,
+				8A13D34E8DCE124ECBF2B7E5 /* NonlinearModels.swift */,
+			);
+			path = CircuitCore;
+			sourceTree = "<group>";
+		};
+		9322A3F3A23A398CB070B10E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D4635C8EB24522B8D8EFA4A6 /* NativeLessonTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D4635C8EB24522B8D8EFA4A6 /* NativeLessonTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E1F2A7846479C1DB7E384FE /* BreadboardUITests.swift */,
+				A54712F6B296FC41F6A42295 /* NativeLessonTests.swift */,
+			);
+			path = NativeLessonTests;
+			sourceTree = "<group>";
+		};
+		FE12749937F3F005D06E4DA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCDC263D2A86A8DD1A8EF973 /* CircuitCore.framework */,
+				CBC21D66F9BF16C989B3FB89 /* CircuitToy.app */,
+				4DFF225EE75D41FAC6ECBDED /* CircuitToyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29E4E848473BF13C12C522F6 /* CircuitCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC0D8F3DEE48950ECFE2BD1 /* Build configuration list for PBXNativeTarget "CircuitCore" */;
+			buildPhases = (
+				05EC765353F0BAD28E65873E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircuitCore;
+			packageProductDependencies = (
+			);
+			productName = CircuitCore;
+			productReference = FCDC263D2A86A8DD1A8EF973 /* CircuitCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C438667FC7D198593B86446 /* CircuitToy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5950F87F93F0113864FBD39D /* Build configuration list for PBXNativeTarget "CircuitToy" */;
+			buildPhases = (
+				6B636CBB1766AFBF9691B472 /* Sources */,
+				7FAE89A35580AC232D17E21B /* Resources */,
+				45EB4274037376FB426EE19F /* Frameworks */,
+				D7C69188B43C5CB46A15584E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB66EAA523C145788972A9B /* PBXTargetDependency */,
+			);
+			name = CircuitToy;
+			packageProductDependencies = (
+			);
+			productName = CircuitToy;
+			productReference = CBC21D66F9BF16C989B3FB89 /* CircuitToy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CE81C7B9BF10620A39F00E9 /* CircuitToyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B2D7BC4C1472A3E8DC941BE /* Build configuration list for PBXNativeTarget "CircuitToyUITests" */;
+			buildPhases = (
+				B9890E0D8279AE041B778E16 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82EB12A49BDB44B1F8DD38EA /* PBXTargetDependency */,
+			);
+			name = CircuitToyUITests;
+			packageProductDependencies = (
+			);
+			productName = CircuitToyUITests;
+			productReference = 4DFF225EE75D41FAC6ECBDED /* CircuitToyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		823D1593C7651BFEA424E151 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					29E4E848473BF13C12C522F6 = {
+
+						ProvisioningStyle = Automatic;
+					};
+					2C438667FC7D198593B86446 = {
+
+						ProvisioningStyle = Automatic;
+					};
+					8CE81C7B9BF10620A39F00E9 = {
+
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2C438667FC7D198593B86446;
+					};
+				};
+			};
+			buildConfigurationList = 5A4C323600A198928E20E927 /* Build configuration list for PBXProject "CircuitToy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1D72903A4296827BCE3D0D81;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FE12749937F3F005D06E4DA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29E4E848473BF13C12C522F6 /* CircuitCore */,
+				2C438667FC7D198593B86446 /* CircuitToy */,
+				8CE81C7B9BF10620A39F00E9 /* CircuitToyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FAE89A35580AC232D17E21B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91748607225FEFA8173E742 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05EC765353F0BAD28E65873E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F662904271D3D6F165D0082 /* Breadboard.swift in Sources */,
+				C5E14E20E2CEDF1671B71F5A /* Circuit.swift in Sources */,
+				310DB0AA463AE858D4E90BE9 /* CircuitPresets.swift in Sources */,
+				619BEF6554A22FDCB4E263A9 /* CircuitSolver.swift in Sources */,
+				BD6095C3B975605695A3B59C /* Logic.swift in Sources */,
+				906323951DF84627F85E73F5 /* NonlinearModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B636CBB1766AFBF9691B472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9AAFF1584B5EB2788E038 /* AdvancedLessonLab.swift in Sources */,
+				553BA58E50DFBFFCE8B0244A /* BenchStore.swift in Sources */,
+				E4E88CE4D48E033506C003F1 /* BreadboardBoardView.swift in Sources */,
+				8E04F2C94BD8E583B0026CE7 /* BreadboardSandboxView.swift in Sources */,
+				E1B5701E51EDAF84970047F6 /* BreadboardStore.swift in Sources */,
+				E9C2EE362671590EA1A89C04 /* CircuitBenchView.swift in Sources */,
+				C4CD930AAB491FBC2F3EB154 /* CircuitToyApp.swift in Sources */,
+				2F1128F16DDA196D1F15170F /* CurriculumData.swift in Sources */,
+				879BAF2E3B1FE0ABB2D292B5 /* CurriculumViews.swift in Sources */,
+				3BA1D221D3D390E0B644FFE0 /* EngineeringLabs.swift in Sources */,
+				3620BBA6B1FDC422B8D32910 /* EngineeringModels.swift in Sources */,
+				A8FF4FC537791B6596AC7A4E /* FoundationsLabs.swift in Sources */,
+				AAF878F2A1639C3CE413DDE5 /* FoundationsModels.swift in Sources */,
+				22A488E18DFE92AB82686124 /* LessonCatalog.swift in Sources */,
+				6BA30F7A75B35071386C62A9 /* LessonSupport.swift in Sources */,
+				9ADFA5044105FF99547D6D9B /* LogicLabView.swift in Sources */,
+				0C2E5F0BF0332A476AE1119D /* PracticeLabs.swift in Sources */,
+				9B4C8A12EB96AB2FDF2C0363 /* PracticeModels.swift in Sources */,
+				548BFDA0C729B57EC8E97925 /* ReactiveLabs.swift in Sources */,
+				9611F2B8BB7495BE39568EBF /* ScienceLabs.swift in Sources */,
+				F61AEA8311A2E87210C83B29 /* ScientificModels.swift in Sources */,
+				82424A58FA8ECC3F52AA6A2C /* SystemsLabs.swift in Sources */,
+				8A10450061F201F8B4A0361C /* SystemsModels.swift in Sources */,
+				B1F94147F0738EC9AB173CFC /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9890E0D8279AE041B778E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73D6DE7DBB41E2468F270B63 /* BreadboardUITests.swift in Sources */,
+				2657393323AAF212E99B0E67 /* NativeLessonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB66EAA523C145788972A9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29E4E848473BF13C12C522F6 /* CircuitCore */;
+			targetProxy = 671FEC585282CDC3424C3B2F /* PBXContainerItemProxy */;
+		};
+		82EB12A49BDB44B1F8DD38EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C438667FC7D198593B86446 /* CircuitToy */;
+			targetProxy = B31AA63F66B31104383FA6F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AB659356AACABA45F535489 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.circuittoy;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		328E24BEB91D77E2A6F00DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.4.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		479900F14384C5C8B061D2E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 5;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.4.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		4C7EB15D547ED692777D476B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.circuittoy.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		4CFF4474C3AB2695BEFC8A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.circuittoy.core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		AD765DE859D7E203E4B3C232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.circuittoy.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CircuitToy;
+			};
+			name = Release;
+		};
+		CB669106B074CC4E1A221F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.circuittoy.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CircuitToy;
+			};
+			name = Debug;
+		};
+		E216489177163EEDA542315B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.utkarsh.circuittoy;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5950F87F93F0113864FBD39D /* Build configuration list for PBXNativeTarget "CircuitToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216489177163EEDA542315B /* Debug */,
+				1AB659356AACABA45F535489 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A4C323600A198928E20E927 /* Build configuration list for PBXProject "CircuitToy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328E24BEB91D77E2A6F00DC2 /* Debug */,
+				479900F14384C5C8B061D2E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B2D7BC4C1472A3E8DC941BE /* Build configuration list for PBXNativeTarget "CircuitToyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB669106B074CC4E1A221F10 /* Debug */,
+				AD765DE859D7E203E4B3C232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FEC0D8F3DEE48950ECFE2BD1 /* Build configuration list for PBXNativeTarget "CircuitCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C7EB15D547ED692777D476B /* Debug */,
+				4CFF4474C3AB2695BEFC8A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 823D1593C7651BFEA424E151 /* Project object */;
+}
